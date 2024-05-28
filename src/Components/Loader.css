@@ -1,0 +1,12 @@
+.loader {
+    width: 60vw;
+    height: 99vh;
+}
+
+.LoaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,494 @@
+.personalDetails {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 0rem 2rem;
+}
+
+.personalDetails>p {
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 0rem 0.5rem;
+}
+
+.DashboardContainer {
+    margin: 1rem;
+    color: brown;
+    /* width: 70vw; */
+    border-left: 0.1rem solid brown;
+    height: auto;
+}
+
+.Head {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 1.5rem;
+    gap: 15vw;
+    font-style: italic;
+}
+
+.Head>i {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.Welcome {
+    font-size: 1.5rem;
+    font-style: oblique;
+    background: rgb(228, 240, 236);
+}
+
+.menuOptions {
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 90vh;
+}
+
+.menuOptions>ul>li {
+    all: unset;
+}
+
+.menuOptions>ul {
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: brown;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.menuOptions>ul>li::after {
+    all: unset;
+}
+
+.menuOptions>ul>li:hover {
+    text-decoration: underline;
+}
+
+.Dashboard {
+    min-height: 36rem;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+    background: url('../Images/DashboardBg.jpg');
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Dashboard::before {
+    inset: 0;
+    position: absolute;
+    content: '';
+    background: url('../Images/DashboardBg.jpg');
+    background-size: 100vw;
+    z-index: -1;
+    opacity: 0.25;
+}
+
+.UpdateButton {
+    max-width: 4rem;
+    align-self: center;
+    display: none;
+}
+
+.float-right {
+    position: relative;
+    float: right;
+}
+
+.parentMenu {
+    height: 100%;
+    padding: 1.5rem;
+    width: 25vw;
+}
+
+.icons {
+    cursor: pointer;
+}
+
+.fa-solid,
+.fa-regular {
+    padding: 0rem .5rem;
+}
+
+.MainMenu>li {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.personalDetails>div>input {
+    width: 15rem;
+}
+
+.tooltip {
+    opacity: 0;
+    max-width: 30vw;
+    background-color: lemonchiffon;
+    color: blueviolet;
+    border: 0.1rem solid blueviolet;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    /* transition: width 0.5s ease-in-out; */
+}
+
+#EmailAddress:hover+p {
+    /* position: absolute; */
+    content: '';
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+}
+
+td,
+tr,
+th {
+    padding: 0.5rem;
+}
+
+.highlight {
+    font-size: 1.2rem;
+    color: brown;
+    margin: 1rem;
+}
+
+.color-brown {
+    color: brown;
+}
+
+.transactionContainer {
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border-left: 0.1rem solid brown; */
+    height: 100%;
+    width: 70vw;
+}
+
+.no-display {
+    display: none;
+}
+
+
+.PayBillsContainer {
+    border-left: 0.1rem solid brown;
+}
+
+.no-width {
+    width: 0;
+}
+
+.paymentOptions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.75s ease-in-out;
+    height: 100%;
+    width: 70vw;
+    overflow: hidden;
+}
+
+.option {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10rem;
+    /* height: 8rem; */
+    text-wrap: wrap;
+    text-align: center;
+
+}
+
+.animate-to-right {
+    /* right: -71vw; */
+    translate: 100% 0%;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.CardPaymentForm,
+.prepaidRechargeForm,
+.DTHForm,
+.electricityBillsForm,
+.pipedGasForm,
+.LPGCylinderForm,
+.educationForm,
+.educationForm,
+.waterBillsForm,
+.cableTVPaymentForm,
+.loanRepaymentForm {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    height: 100%;
+}
+
+.CardPaymentForm>input,
+.prepaidRechargeForm>input,
+.DTHForm>input,
+.electricityBillsForm>input,
+.pipedGasForm>input,
+.LPGCylinderForm>input,
+.educationForm>input,
+.educationForm>input,
+.waterBillsForm>input,
+.cableTVPaymentForm>input,
+.loanRepaymentForm>input {
+    width: 16rem;
+    padding: 0.5rem;
+
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    width: 17rem;
+}
+
+select:hover {
+    border: 0.1rem solid brown;
+    background: white;
+    color: brown;
+}
+
+.supporter,
+.AmountSymbol {
+    position: relative;
+}
+
+.supporter::after,
+.AmountSymbol::after {
+    inset: 0;
+    position: absolute;
+    content: '+91';
+    /* background: red; */
+    color: brown;
+    /* width: 2rem; */
+    /* height: 2.3rem; */
+    padding: 0.5rem;
+    z-index: 1;
+    top: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#mobileNumber,
+#amount,
+#DTHAmount,
+#electricityAmount,
+#LPGCylinderAmount,
+#educationAmount,
+#WaterBillAmount,
+#cableTVAmount,
+#loanAmount,
+#pipedGasAmount {
+    width: 12rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.AmountSymbol::after {
+    content: 'Rs';
+}
+
+button {
+    align-self: center;
+}
+
+.loanRepayment {
+    height: 100%;
+}
+
+.transactionsTable {
+    margin: 1rem 2rem;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid brown;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+.updateCardDetails {
+    width: 60vw;
+}
+
+.fa-angle-down {
+    cursor: pointer;
+
+}
+
+.labelDiv {
+    border: 0.1rem solid brown;
+    border-radius: 1rem;
+    width: 6rem;
+    height: 2rem;
+    position: relative;
+}
+
+.labelDiv::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    border: 0.1rem solid maroon;
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    top: -0.2rem;
+    background: brown;
+    transition: all 0.2s ease-in-out;
+}
+
+.toggleCheckBox {
+    display: flex;
+    cursor: pointer;
+}
+
+.DashboardContainer input:not([type="checkbox"]) {
+    all: unset;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    outline: 0.1rem solid black;
+    border: none;
+}
+
+.toggleCheckBox:checked+.labelDiv::after {
+    translate: 3.7rem;
+    background: green !important;
+    border: 0.1rem solid green;
+}
+
+.optionsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.toggleContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.optionsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 1.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.optionsContainer {
+    height: 0rem;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.AddCardButton {
+    position: relative;
+    left: 75%;
+    /* float: right; */
+    display: block;
+}
+
+.addCardPanelContainer {
+    position: absolute;
+    width: 70vw;
+    height: fit-content;
+    inset: 0;
+    top: 30%;
+    bottom: 10vw;
+    left: 15vw;
+    background-color: white;
+    z-index: 1;
+    padding-bottom: 2rem;
+    box-shadow: 0rem 0 0.5rem brown;
+    border-radius: 1rem;
+    border: none;
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.panel>input {
+    width: 30rem;
+    padding: 0.4rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+
+.panel>label {
+    position: relative;
+    float: left;
+    width: 30rem;
+}
+
+.panelHeader {
+    background: brown;
+    color: white;
+    padding: 0.5rem 2rem;
+}
+
+.updateCardDetails {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    min-height: 50vh;
+}

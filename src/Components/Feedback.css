@@ -1,0 +1,71 @@
+.Image img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.Image {
+    width: 50vw;
+}
+
+.feedbackForm {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 1rem;
+    width: 40vw;
+}
+
+.FeedbackContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: hsl(171, 47%, 26%);
+    /* background: linear-gradient(289deg, rgba(93, 45, 27, 0.75), white) !important; */
+    background: url('../Images/background_MainPage3.jpg');
+    background-size: cover;
+    color: white;
+    /* color: brown; */
+    padding: 1rem;
+    position: relative;
+    /* left: -150vw; */
+    translate: -150vw;
+}
+
+#Feedback {
+    padding: 1rem;
+}
+
+.feedbackForm>input,
+.feedbackForm>textarea {
+    padding: 0.5rem 1rem;
+    width: 17rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: transparent;
+    transition: all 500ms ease-in-out;
+    outline: .1rem solid white;
+    color: white;
+}
+
+.feedbackForm>textarea::placeholder {
+    color: white;
+}
+
+.feedbackForm>label {
+    font-weight: 600;
+}
+
+.FeedbackMajor {
+    /* background: rgba(93, 45, 27, 0.75) !important; */
+    background-color: hsl(70, 41%, 31%);
+    color: aliceblue;
+}
+
+input:hover,
+textarea:hover {
+    outline: 0.1rem solid black;
+    background: white;
+    color: black;
+}

@@ -1,0 +1,67 @@
+.ReviewImage {
+    width: 7rem;
+    height: 10rem;
+}
+
+.ReviewImageMan {
+    width: 7rem;
+    height: 7rem;
+}
+
+.reviews,
+.heading1 {
+    /* background: rgb(70, 71, 101) !important;
+    color: white; */
+    /* background: rgba(93, 45, 27, 0.75); */
+    color: aliceblue;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 98.8vw;
+    overflow: hidden;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 98.8vw;
+    /* width: 100vw; */
+    flex-wrap: nowrap;
+}
+
+
+.refers ul {
+    /* background: rgb(70, 71, 101) !important; */
+    list-style-type: disc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.5s ease;
+    /* background: rgba(93, 45, 27, 0.75) !important; */
+    /* background: url('../Images/background_MainPage3.jpg'); */
+    color: aliceblue;
+}
+
+.refers ul li:hover {
+    color: brown;
+}
+
+#refer1 {
+    background-color: blueviolet;
+
+}
+
+.ReviewContainer {
+    background: url('../Images/background_MainPage3.jpg');
+    background-size: cover;
+}

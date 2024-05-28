@@ -1,0 +1,10 @@
+.Footer {
+    /* background: rgba(93, 45, 27, 0.75); */
+    color: white;
+    background: hsl(70, 41%, 31%);
+    text-align: center;
+    font-size: 1.15rem;
+    padding: 1rem;
+    font-weight: 600;
+    border-top: 0.1rem solid white;
+}

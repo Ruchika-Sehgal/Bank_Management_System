@@ -1,0 +1,59 @@
+.header {
+    transition: all .5s ease-in-out;
+    font-size: 3rem;
+    color: white;
+    width: 60vw;
+    font-weight: 600;
+    z-index: 1;
+    position: relative;
+}
+
+.headertext {
+    transition: all .5s ease-in-out;
+    font-size: 3rem;
+    color: white;
+    width: 60vw;
+    font-weight: 600;
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+    left: 25%;
+    top: 25%;
+    pointer-events: none;
+    translate: 0% 50%;
+}
+
+.header::after {
+    content: '';
+    background-image: url('../Images/HeaderBgCopy.png');
+    inset: 0;
+    position: absolute;
+    width: 98.8vw;
+    height: 30rem;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header:hover {
+    background-color: transparent;
+    filter: blur(.4rem);
+}
+
+.headerContainer {
+    position: relative;
+    height: 30rem;
+}
+
+.header:hover+* {
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-shadow: 0rem 0rem 2rem grey;
+    /* left: 50%; */
+    left: 10%;
+    top: 0%;
+
+}

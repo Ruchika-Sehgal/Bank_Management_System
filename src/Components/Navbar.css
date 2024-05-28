@@ -1,0 +1,82 @@
+.MainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    /* background: rgba(93, 45, 27, 0.75); */
+    /* background: hsl(171, 47%, 26%); */
+    /* background-image: url('../Images/background_MainPage3.jpg'); */
+    background: hsl(70, 41%, 31%);
+    color: aliceblue;
+    padding: 1rem 0rem;
+}
+
+.LogoImage {
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+}
+
+.Menu>ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Menu>ul>li>a {
+    all: unset;
+}
+
+.Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.Search>* {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border: 0;
+    font-size: 1rem;
+}
+
+.Search input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.Search>button {
+    border-radius: 0rem !important;
+    background: white;
+    cursor: pointer;
+    width: 4rem;
+    font-size: 1.5rem;
+    height: 2.2rem;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+li {
+    position: relative;
+}
+
+li::after {
+    inset: 0;
+    content: '';
+    height: 0.3rem;
+    width: 0rem;
+    position: absolute;
+    top: 2.5rem;
+    background: red;
+    transition: all 0.5s ease-in-out;
+}
+
+li:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,93 @@
+.ForgotPswd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    color: brown;
+    font-weight: 600;
+    gap: 1rem;
+    font-size: 1.15rem;
+    padding: 1rem;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 30vw;
+}
+
+hr {
+    font-weight: 700;
+    width: 40%;
+}
+
+.processContainer {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.Authenticate,
+.SavePassword {
+    font-weight: 700;
+}
+
+.Authenticate:hover,
+.SavePassword:hover {
+    color: brown !important;
+}
+
+.no-display {
+    display: none;
+}
+
+.fa-check {
+    color: green !important;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.step {
+    color: brown;
+    padding: 0.5rem;
+    border-radius: 100%;
+    background: white;
+    border: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: -2s;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
